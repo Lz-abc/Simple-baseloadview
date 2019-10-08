@@ -2,22 +2,32 @@
 简单的基础加载框架
 
 ![image](https://raw.githubusercontent.com/Lz-abc/Simple-baseloadview/master/pic/ezgif-4-26728a0fcb4f.gif)
-
-
-### 在自己的baseActivity中加入这段代码
- ``` 
- mLoadView = new SimpleBaseLoadView(this, setLayout());
- setContentView(mLoadView.getLayoutView());
- ```
  
  ###  使用
  ```
+  allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+ 
+ dependencies {
+		implementation 'com.github.Lz-abc:Simple-baseloadview:1.0'
+	}
+ 
+ //在自己的baseActivity中加入这段代码
+ mLoadView = new SimpleBaseLoadView(this, setLayout());
+ setContentView(mLoadView.getLayoutView());
+ 
+ 
  showBar(boolean isShow, boolean isFillStatus)//设置是否显示bar 是否填充状态栏
  showError()//显示错误
  showContent()//显示正文
  showEmpty()//显示空
  showLoading()//显示加载中
  ```
+ 
  
  ### 如果需要有部分activity 不使用可以重写方法
 ``` 
