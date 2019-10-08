@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/showBar"
+            android:title="showBar" />
+        <item
+            android:id="@+id/showLoading"
+            android:title="showLoading" />
+        <item
+            android:id="@+id/showContent"
+            android:title="showContent" />
+        <item
+            android:id="@+id/showError"
+            android:title="showError" />
+        <item
+            android:id="@+id/showEmpty"
+            android:title="showEmpty" />
+    </group>
+
+</menu>

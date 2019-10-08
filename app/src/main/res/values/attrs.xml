@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TitleFrameView">
+        <attr name="title" format="string"/>
+        <attr name="angle" format="integer"/>
+        <attr name="padding" format="dimension"/>
+        <attr name="bkColor" format="color"/>
+        <attr name="titleColor" format="color"/>
+        <attr name="titleSize" format="dimension"/>
+        <attr name="bkWidth" format="integer"/>
+    </declare-styleable>
+</resources>
