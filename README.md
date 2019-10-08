@@ -19,7 +19,7 @@
  showLoading()//显示加载中
  ```
  
- ### 如果需要有部分activity 不想使用可以重写方法
+ ### 如果需要有部分activity 不使用可以重写方法
 ``` 
  mLoadView = new SimpleBaseLoadView(this, setLayout()){
             @Override
