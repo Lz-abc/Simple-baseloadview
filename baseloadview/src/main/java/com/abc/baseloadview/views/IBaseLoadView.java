@@ -19,7 +19,7 @@ import java.lang.ref.WeakReference;
  * @name lz
  * @time 2019/7/10 14:59
  */
-public abstract class IBaseLoadView<T> {
+public abstract class IBaseLoadView {
 
     private View mLayoutView;
     private View mContentView;
@@ -116,6 +116,23 @@ public abstract class IBaseLoadView<T> {
             setStatusBarHeight();
         }
     }
+
+    public void showError() {
+        show(getErrorViewId());
+    }
+
+    public void showContent() {
+        show(getContentViewId());
+    }
+
+    public void showEmpty() {
+        show(getEmptyViewId());
+    }
+
+    public void showLoading() {
+        show(getLoadingViewId());
+    }
+
 
     public boolean isShowBar(){
         if (mBarView==null){

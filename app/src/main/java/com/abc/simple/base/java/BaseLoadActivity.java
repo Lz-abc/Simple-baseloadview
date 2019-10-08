@@ -79,25 +79,25 @@ public abstract class BaseLoadActivity extends Activity implements IBaseActivity
 
 
     public void showError() {
-        mLoadView.show(mLoadView.getErrorViewId());
+        mLoadView.showError();
     }
 
     public void showBar(boolean isShow, boolean isFillStatus) {
         mLoadView.showBar(isShow, isFillStatus);
     }
 
-
     public void showContent() {
-        mLoadView.show(mLoadView.getContentViewId());
+        mLoadView.showContent();
     }
 
     public void showEmpty() {
-        mLoadView.show(mLoadView.getEmptyViewId());
+        mLoadView.showEmpty();
     }
 
     public void showLoading() {
-        mLoadView.show(mLoadView.getLoadingViewId());
+        mLoadView.showLoading();
     }
+
 
     @Override
     public void onClick(View v) {
